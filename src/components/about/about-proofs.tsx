@@ -8,12 +8,12 @@ interface AboutProofsProps {
   postCovers: Record<string, string>;
 }
 
-/** Extract slug from a luolei.org post URL */
+/** Extract slug from a liuzehui.com post URL */
 function extractSlug(url: string): string | null {
   try {
     const u = new URL(url);
     if (u.hostname !== new URL(siteConfig.siteUrl).hostname) return null;
-    // URL pattern: https://luolei.org/{slug}
+    // URL pattern: https://liuzehui.com/{slug}
     const slug = u.pathname.replace(/^\/|\/$/g, "");
     return slug || null;
   } catch {

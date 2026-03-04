@@ -120,24 +120,16 @@ export function SiteHeader() {
         >
           <Image
             src="/legacy/logo.png"
-            alt="luolei logo"
+            alt="liuzehui logo"
             width={28}
             height={28}
             className="h-7 w-7"
           />
-          <span>罗磊的独立博客</span>
+          <span>刘泽辉的博客</span>
         </Link>
         <nav className="flex items-center text-sm text-zinc-600 dark:text-zinc-300">
           <div className="hidden items-center md:flex">
             <div className="flex items-center gap-2.5">
-              <a
-                href={siteConfig.social.youtube}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-1 py-1 transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
-              >
-                ZUOLUOTV
-              </a>
               <a
                 href="/rss.xml"
                 target="_blank"
@@ -194,14 +186,6 @@ export function SiteHeader() {
               </summary>
 
               <div className="absolute right-0 top-10 z-40 w-44 rounded-lg border border-zinc-200 bg-white p-1.5 shadow-xl dark:border-zinc-700 dark:bg-zinc-900">
-                <a
-                  href={siteConfig.social.youtube}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-between rounded-md px-2 py-1.5 text-sm transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
-                >
-                  <span>ZUOLUOTV</span>
-                </a>
                 <a
                   href="/rss.xml"
                   target="_blank"

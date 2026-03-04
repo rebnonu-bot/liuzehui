@@ -327,7 +327,7 @@ export function SiteFooter() {
             </span>
             <span className="hidden md:inline text-zinc-300 dark:text-zinc-700">·</span>
             <a
-              href="https://github.com/foru17/luoleiorg-x"
+              href="https://github.com/rebnonu-bot/liuzehui"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1 hover:text-zinc-600 dark:hover:text-zinc-300"
@@ -341,13 +341,9 @@ export function SiteFooter() {
             <span>
               &copy; {new Date().getFullYear()}{" "}
               <a href={siteConfig.siteUrl} className="hover:text-zinc-600 dark:hover:text-zinc-300">
-                LUOLEI.ORG
+                LIUZEHUI.COM
               </a>
             </span>
-            <span className="hidden md:inline text-zinc-300 dark:text-zinc-700">·</span>
-            <a href="http://beian.miit.gov.cn/" target="_blank" rel="noreferrer" className="hover:text-zinc-600 dark:hover:text-zinc-300">
-              {siteConfig.beian}
-            </a>
           </div>
         </div>
         

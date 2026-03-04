@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "liuzehui-blog",
+  "compatibility_date": "2026-03-04",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": "./worker/index.ts",
+  "assets": {
+    "not_found_handling": "none",
+    "binding": "ASSETS"
+  },
+  "images": {
+    "binding": "IMAGES"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "VINEXT_CACHE",
+      "id": "0752d9951a8c49b2ba958a20d1640b31"
+    }
+  ],
+  "routes": [
+    {
+      "pattern": "liuzehui.com",
+      "custom_domain": true
+    }
+  ]
+}

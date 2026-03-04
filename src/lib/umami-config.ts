@@ -5,9 +5,9 @@
 
 // 默认配置（用于本地开发）
 const DEFAULT_CONFIG = {
-  apiUrl: "https://u.is26.com/api",
-  websiteId: "185ef031-29b2-49e3-bc50-1c9f80b4e831",
-  scriptUrl: "https://u.is26.com/script.js",
+  apiUrl: "https://api.umami.is/v1",
+  websiteId: "0cbc664d-cf20-44ef-b4c7-6f1157762d65",
+  scriptUrl: "https://cloud.umami.is/script.js",
   // 注意：API Token 应该从环境变量读取
   // 本地开发时可以在 .env 中设置，生产环境通过 wrangler secret 设置
 };

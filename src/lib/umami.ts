@@ -20,7 +20,7 @@ export interface UmamiStatsResult {
  * 从 Umami API 获取页面浏览量数据
  * 
  * 本地开发和生产环境都会调用 Umami API 获取历史统计数据
- * 注意：Umami 只记录配置的域名（luolei.org）的新访问，但 API 可以查询所有历史数据
+ * 注意：Umami 只记录配置的域名（liuzehui.com）的新访问，但 API 可以查询所有历史数据
  */
 export async function fetchUmamiPageViews(): Promise<UmamiStatsResult> {
   try {
