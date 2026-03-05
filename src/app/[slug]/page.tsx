@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ArticleBottomNav } from "@/components/article-bottom-nav";
-import { ArticleComment } from "@/components/article-comment";
 import { ArticleCopyright } from "@/components/article-copyright";
 import { ArticleMeta } from "@/components/article-meta";
 import { ArticleToc } from "@/components/article-toc";
@@ -195,7 +194,6 @@ export default async function PostPage({ params }: PostPageProps) {
 
           <article className="article-body article-content mt-6 pb-6 lg:pb-12 ">
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <ArticleComment slug={post.slug} title={post.title} />
           </article>
 
           <ArticleCopyright
