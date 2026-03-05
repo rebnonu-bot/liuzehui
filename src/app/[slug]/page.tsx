@@ -195,6 +195,7 @@ export default async function PostPage({ params }: PostPageProps) {
 
           <article className="article-body article-content mt-6 pb-6 lg:pb-12 ">
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <ArticleComment slug={post.slug} title={post.title} />
           </article>
 
           <ArticleCopyright
@@ -203,7 +204,6 @@ export default async function PostPage({ params }: PostPageProps) {
             slug={post.slug}
           />
           <ArticleBottomNav prev={siblings.prev} next={siblings.next} />
-          <ArticleComment slug={post.slug} title={post.title} />
         </section>
         <ArticleToc headings={post.headings} />
       </div>
